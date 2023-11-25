@@ -121,6 +121,7 @@ Frontend-часть находится по [ссылке](https://github.com/Mr
 - Ссылка на библиотекку [ffmpeg](https://disk.yandex.ru/d/ReDkMtstUx2A1w) *(путь к ней нужно также прописать в path - [инструкция](https://phoenixnap.com/kb/ffmpeg-windows); все пути не должны содержать кириллицу воизбежание ошибок, после установки путей в path может возникнуть необходимость перезагрузки компьютера)*
 - Ссылка на [сформированный конспект](https://github.com/MrRobinGoood/Smart-Lecture-Notes-Backend/blob/master/resources/summary/summary5.txt)
 - Ссылка на [submission.csv](https://github.com/MrRobinGoood/Smart-Lecture-Notes-Backend/blob/master/resources/submission/submission.csv)
+- Ссылка на [демо](https://disk.yandex.ru/i/7IZ8tWkBWAAPBg)
 - Ссылка на обработанный [тестовый датасет](https://github.com/MrRobinGoood/Smart-Lecture-Notes-Backend/tree/master/resources/fragments)
 
 
