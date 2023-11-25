@@ -30,5 +30,5 @@ def imageCrawler(query, num, filters):
     google_crawler.downloader.logger.addFilter(checkURL)
     google_crawler.crawl(keyword=query, max_num=num, filters= filters)
 
-imageCrawler("c++", 1, filters)
+imageCrawler("Описание задачи", 7, filters)
 

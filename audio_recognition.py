@@ -43,15 +43,16 @@ def get_text(audio):
 
 def get_finished_json(audio):
     result, recognition_time = get_text(audio)
-    raw = result["text"].strip()
+
     summary = "<b>Это конспект лекции</b>"
     glossary = ""
     for res in result["chunks"]:
         glossary += f'{res["timestamp"]} - {res["text"]}\n'
 
     data = {"raw": raw, "summary": summary, "glossary": glossary, "recognition_time":  f"{recognition_time} мин."}
-    with open('resources/outputs/data4.json', 'w', encoding='utf-8') as f:
-        json.dump(data, f)
+    # сохранение в json файл
+    # with open('resources/outputs/transcribed/jsons/data5.json', 'w', encoding='utf-8') as f:
+    #     json.dump(data, f)
     return data
 
 
