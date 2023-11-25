@@ -82,7 +82,7 @@ Frontend-часть находится по [ссылке](https://github.com/Mr
 В качестве библиотеки распознавания речи мы используем Whisper v.3 от компании OpenAI. Данная модель является открытой и находится под лицензией Apache 2.0. Она имеет сравнительно небольшой вес(3 ГБ) и при наличии вычислительных мощностей может выдавать быстрый инференс. 
 
 Устройство работы данной библиотеки нетривиально и приведено на схеме:
-![устройство библиотеки whisper]()
+![устройство библиотеки whisper](https://github.com/MrRobinGoood/Smart-Lecture-Notes-Backend/blob/master/resources/pic/approach.png)
 
 Данная библиотека хорошо решает проблему англоязычных терминов встречающихся в речи, а также предсказывает пунктуацию.
 
@@ -95,9 +95,20 @@ Frontend-часть находится по [ссылке](https://github.com/Mr
 При составлении конспектов нами также используется парсинг картинок, которые обогащают лекцию и добавляют информативности.
 
 Все материалы поступают благодаря FastAPI в фронтенд нашего приложения, где у методиста есть возможность отредактировать и скачать полученные материалы.
-[Графический интерфейс]()
-[Графический интерфейс 2]()
-[Графический интерфейс 3]()
+- Процесс подгрузки mp3 файла:
+![Графический интерфейс](https://github.com/MrRobinGoood/Smart-Lecture-Notes-Backend/blob/master/resources/pic/Screenshot_1.png)
+
+- После подгрузки отображается размер подгруженного файла в Кб:
+
+![Графический интерфейс 2](https://github.com/MrRobinGoood/Smart-Lecture-Notes-Backend/blob/master/resources/pic/Screenshot_2.png)
+
+- После непродолжительного ожидания открывается основное окно выбора и редактирования конспекта:
+
+![Графический интерфейс 3](https://github.com/MrRobinGoood/Smart-Lecture-Notes-Backend/blob/master/resources/pic/Screenshot_3.png)
+- В правом поле можно сменить подготовленные тексты: либо отображать тайм-коды с терминами, либо подробную транскрибацию лекции.
+![Графический интерфейс 4](https://github.com/MrRobinGoood/Smart-Lecture-Notes-Backend/blob/master/resources/pic/Screenshot_4.png)
+- Для конспекта доступна возможность выгрузки в .doc файл:
+![Графический интерфейс 5](https://github.com/MrRobinGoood/Smart-Lecture-Notes-Backend/blob/master/resources/pic/Screenshot_5.png)
 
 Также для нашего решения доступна демо-версия [Смарт-Методологист-Бот](https://t.me/MethodologistAssistant_bot), в которой у вас есть возможность протестировать работу транскрибирования, и составления конспекта, как записью голосового сообщения, так и прикреплением mp3 файла.
 
@@ -108,7 +119,10 @@ Frontend-часть находится по [ссылке](https://github.com/Mr
 - Ссылка на используемую LLM модель - Saiga-2-Retrieval-QA [model-q4_K.gguf](https://huggingface.co/IlyaGusev/saiga2_13b_gguf/blob/main/model-q4_K.gguf)
 - Ссылка на кэш с моделью [Whisper](https://disk.yandex.ru/d/-pW37Kf6sEySXw)
 - Ссылка на библиотекку [ffmpeg](https://disk.yandex.ru/d/ReDkMtstUx2A1w) *(путь к ней нужно также прописать в path - [инструкция](https://phoenixnap.com/kb/ffmpeg-windows); все пути не должны содержать кириллицу воизбежание ошибок, после установки путей в path может возникнуть необходимость перезагрузки компьютера)*
-- Ссылка на обработанный [тестовый датасет]()
+- Ссылка на [сформированный конспект]()
+- Ссылка на [submission.csv](https://github.com/MrRobinGoood/Smart-Lecture-Notes-Backend/blob/master/resources/submission/submission.csv)
+- Ссылка на обработанный [тестовый датасет](https://github.com/MrRobinGoood/Smart-Lecture-Notes-Backend/tree/master/resources/fragments)
+
 
 ## Инструкция для запуска
 Для локального запуска на машине *(необходимые ссылки прикреплены в ссылках на материалы)*
